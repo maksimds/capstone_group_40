@@ -2,9 +2,9 @@
 
 *Denis Maksimov, Product Designer · October 7, 2026*
 
-I sketched a low-fidelity onboarding flow for Lynea by hand, covering the path a brand-new user takes from first launch to the home screen. The goal at this stage was to map the sequence of screens and the key decisions on each one before moving into Figma, not to define visual design.
+I sketched a low-fidelity onboarding flow for Lynea by hand, covering the path a brand-new user takes from first launch to the home screen. The goal at this stage was to map the sequence of screens and the key decisions on each one before moving into Figma, without defining actual visual design.
 
-The flow follows the organizer path: the user creates a trip with the help of the AI, sees trip options before being asked to sign up, invites friends, and only then creates an account and sets up notifications.
+The flow: user creates a trip with the help of the AI, sees trip options before being asked to sign up, invites friends, and only then creates an account and sets up notifications.
 
 ## Screens in the flow
 
