@@ -1,2 +1,3 @@
-# capstone_group_40
-Senior design repository for group 40 (Lynea)
+# Lynea (Capstone Group 40)
+### Senior design repository for Group 40 
+Lynea is an AI-powered mobile app that makes planning group trips simple. One person starts a trip and invites friends, who join from their own phones in seconds. Each member privately tells Lynea's AI agent their dates, budget, departure city, and travel style, so no one has to bring up money or preferences in the group chat. The agent then combines everyone's input into one plan, with destinations, dates, stays, and an itinerary, and explains clearly why each option works or doesn't for the group. Lynea is a senior capstone project at the University of Cincinnati, to be presented at the UC IT Expo in April 2027.
