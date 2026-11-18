@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="100 100 824 824">
+<defs>
+  <path id="tile" d="M100,100H924V924H100Z"/>
+  <path id="stem" d="M362,237 Q362,226 373,226 L511,226 Q522,226 522,237 L522,573.81 Q522,584.81 514.22,592.59 L369.78,737.03 Q362,744.81 362,733.81 Z"/>
+  <path id="foot" d="M523.41,601.78 Q531.19,594 542.19,594 L701,594 Q712,594 712,605 L712,743 Q712,754 701,754 L382.19,754 Q371.19,754 378.97,746.22 Z"/>
+  <clipPath id="tileClip"><use href="#tile"/></clipPath>
+  <clipPath id="letterClip"><use href="#stem"/><use href="#foot"/></clipPath>
+  <clipPath id="stemClip"><use href="#stem"/></clipPath>
+  <clipPath id="footClip"><use href="#foot"/></clipPath>
+
+  <linearGradient id="face" gradientUnits="userSpaceOnUse" x1="410" y1="226" x2="660" y2="700"><stop offset="0" stop-color="#fb5607"/><stop offset="0.06" stop-color="#f75514"/><stop offset="0.13" stop-color="#f35320"/><stop offset="0.19" stop-color="#ec512a"/><stop offset="0.25" stop-color="#e44e33"/><stop offset="0.31" stop-color="#dc4b3b"/><stop offset="0.38" stop-color="#d14843"/><stop offset="0.44" stop-color="#c6444a"/><stop offset="0.5" stop-color="#b94051"/><stop offset="0.56" stop-color="#ac3c57"/><stop offset="0.63" stop-color="#9c375c"/><stop offset="0.69" stop-color="#8c3261"/><stop offset="0.75" stop-color="#7a2d65"/><stop offset="0.81" stop-color="#662769"/><stop offset="0.88" stop-color="#51226c"/><stop offset="0.94" stop-color="#381d6e"/><stop offset="1" stop-color="#191970"/></linearGradient>
+  <linearGradient id="lip" gradientUnits="userSpaceOnUse" x1="410" y1="226" x2="660" y2="700"><stop offset="0" stop-color="#feb69e"/><stop offset="0.06" stop-color="#ffb199"/><stop offset="0.13" stop-color="#feac95"/><stop offset="0.19" stop-color="#fea48e"/><stop offset="0.25" stop-color="#fe9a85"/><stop offset="0.31" stop-color="#fd8f7e"/><stop offset="0.38" stop-color="#fd8076"/><stop offset="0.44" stop-color="#fd6d70"/><stop offset="0.5" stop-color="#ef6475"/><stop offset="0.56" stop-color="#df5e7a"/><stop offset="0.63" stop-color="#cb577f"/><stop offset="0.69" stop-color="#b74f83"/><stop offset="0.75" stop-color="#a04887"/><stop offset="0.81" stop-color="#873f8a"/><stop offset="0.88" stop-color="#6c388c"/><stop offset="0.94" stop-color="#4d318d"/><stop offset="1" stop-color="#272c8e"/></linearGradient>
+  <linearGradient id="side" gradientUnits="userSpaceOnUse" x1="410" y1="226" x2="660" y2="700"><stop offset="0" stop-color="#ba3f08"/><stop offset="0.06" stop-color="#b93b06"/><stop offset="0.13" stop-color="#b83709"/><stop offset="0.19" stop-color="#b63007"/><stop offset="0.25" stop-color="#b22a11"/><stop offset="0.31" stop-color="#ab291d"/><stop offset="0.38" stop-color="#a32727"/><stop offset="0.44" stop-color="#9a252f"/><stop offset="0.5" stop-color="#8f2336"/><stop offset="0.56" stop-color="#85213c"/><stop offset="0.63" stop-color="#781e42"/><stop offset="0.69" stop-color="#6b1b47"/><stop offset="0.75" stop-color="#5d184b"/><stop offset="0.81" stop-color="#4d1450"/><stop offset="0.88" stop-color="#3c1053"/><stop offset="0.94" stop-color="#280c56"/><stop offset="1" stop-color="#0f0859"/></linearGradient>
+  <!-- light from above: a soft sheen over the top of each face -->
+  <linearGradient id="sheen" gradientUnits="userSpaceOnUse" x1="0" y1="226" x2="0" y2="754">
+    <stop offset="0" stop-color="#fff" stop-opacity=".12"/>
+    <stop offset=".35" stop-color="#fff" stop-opacity=".02"/>
+    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="glint" gradientUnits="userSpaceOnUse" cx="418" cy="236" r="190">
+    <stop offset="0" stop-color="#fff" stop-opacity=".2"/>
+    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity=".95"/>
+    <stop offset=".12" stop-color="#fff" stop-opacity=".35"/>
+    <stop offset=".5" stop-color="#fff" stop-opacity=".1"/>
+    <stop offset="1" stop-color="#fff" stop-opacity=".04"/>
+  </linearGradient>
+  <linearGradient id="tileRim" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+    <stop offset=".3" stop-color="#fff" stop-opacity=".0"/>
+    <stop offset=".75" stop-color="#9aa3b5" stop-opacity="0"/>
+    <stop offset="1" stop-color="#9aa3b5" stop-opacity=".45"/>
+  </linearGradient>
+  <radialGradient id="tileLight" cx="512" cy="150" r="760" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#fff" stop-opacity=".45"/>
+    <stop offset=".6" stop-color="#fff" stop-opacity="0"/>
+  </radialGradient>
+
+  <filter id="tileShadow" filterUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="14"/><feOffset dy="14" result="a"/>
+    <feFlood flood-color="#000" flood-opacity=".26"/><feComposite in2="a" operator="in" result="s1"/>
+    <feGaussianBlur in="SourceAlpha" stdDeviation="2"/><feOffset dy="2" result="b"/>
+    <feFlood flood-color="#000" flood-opacity=".18"/><feComposite in2="b" operator="in" result="s2"/>
+    <feMerge><feMergeNode in="s1"/><feMergeNode in="s2"/></feMerge>
+  </filter>
+  <filter id="soft" filterUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024"><feGaussianBlur stdDeviation="26"/></filter>
+  <filter id="contact" filterUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024"><feGaussianBlur stdDeviation="5"/></filter>
+</defs>
+
+<!-- tile -->
+
+<use href="#tile" fill="#E9ECEF"/>
+<g clip-path="url(#tileClip)">
+  <use href="#tile" fill="url(#tileLight)"/>
+  
+
+  <!-- shadows the letter casts on the tile: a coloured glow, then a tight contact shadow -->
+  <g filter="url(#soft)" opacity=".42" transform="translate(0 39)"><use href="#stem" fill="url(#face)"/><use href="#foot" fill="url(#face)"/></g>
+  <g filter="url(#contact)" opacity=".35" transform="translate(0 18)"><use href="#stem" fill="#191970"/><use href="#foot" fill="#191970"/></g>
+</g>
+
+<!-- extruded sides -->
+<g fill="url(#side)"><use href="#stem" y="13" fill="url(#lip)"/><use href="#stem" y="12" fill="url(#lip)"/><use href="#stem" y="11"/><use href="#stem" y="10"/><use href="#stem" y="9"/><use href="#stem" y="8"/><use href="#stem" y="7"/><use href="#stem" y="6"/><use href="#stem" y="5"/><use href="#stem" y="4"/><use href="#stem" y="3"/><use href="#stem" y="2"/><use href="#stem" y="1"/><use href="#foot" y="13" fill="url(#lip)"/><use href="#foot" y="12" fill="url(#lip)"/><use href="#foot" y="11"/><use href="#foot" y="10"/><use href="#foot" y="9"/><use href="#foot" y="8"/><use href="#foot" y="7"/><use href="#foot" y="6"/><use href="#foot" y="5"/><use href="#foot" y="4"/><use href="#foot" y="3"/><use href="#foot" y="2"/><use href="#foot" y="1"/></g>
+
+<!-- top faces -->
+<use href="#stem" fill="url(#face)"/>
+<use href="#foot" fill="url(#face)"/>
+<g clip-path="url(#letterClip)">
+  <rect x="0" y="0" width="1024" height="1024" fill="url(#sheen)"/>
+  <rect x="0" y="0" width="1024" height="1024" fill="url(#glint)" style="mix-blend-mode:screen"/>
+</g>
+<!-- rim light: an inner edge, brightest along the top -->
+<g clip-path="url(#stemClip)"><use href="#stem" fill="none" stroke="url(#rim)" stroke-width="5"/></g>
+<g clip-path="url(#footClip)"><use href="#foot" fill="none" stroke="url(#rim)" stroke-width="5"/>
+  <line x1="535.1923881554251" y1="590" x2="367.19238815542514" y2="758" stroke="#fff" stroke-opacity=".55" stroke-width="5" transform="translate(0.85 0.85)"/></g>
+</svg>
